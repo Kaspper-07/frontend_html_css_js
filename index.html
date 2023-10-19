@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Masterdots Game</title>
 </head>
 <body>
-    
+    <!-- Cabecera  -->
+    <header>
+        <img src="./img/logo.png" alt="logo">
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+        <!-- Formulario Usuario -->
+
+        <form action="#">
+            
+            <div class="itemform">
+                <label for="name">Introduce tu nick</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick" required minlength="2">
+            </div>
+
+            <div class="itemform">
+                <label for="email">Correo electronico</label>
+                <input type="email" placeholder="yo@iam.es" id="email">
+            </div>
+
+            <div>
+                <label for="nick">Tamaño del juego</label>
+                <select name="tamano" id="tamano">
+                    <option value="">--Por favor elige un tamaño--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+
+            <div class="itemform">
+                <input type="submit" value="JUGAR">
+            </div>
+        </form>
+
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p>Curso FrontEnd HTML, CSS, JS</p>
+    </footer>
 </body>
 </html>
